@@ -17,10 +17,11 @@ if __name__ == "__main__":
 
     with open(file_name, "r") as fileInd:
         content = fileInd.read().split(" ")
-        for i, v in enumerate(content):
-            if content[i].lower() not in slovar:
-                count += 1
-                print(f"Неправильное слово: {v}")
-        print(f"Количество неправильно написанных слов: {count}")
+
+    for i, v in enumerate(content):
+        if content[i].lower() not in slovar:
+            count += 1
+            print(f"Неправильное слово: {v}")
+    print(f"Количество неправильно написанных слов: {count}")
 
 
